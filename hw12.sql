@@ -1,0 +1,47 @@
+測試用程式碼
+
+/* T1 權限測試 */
+SELECT *
+FROM S1.T1;
+
+UPDATE S1.T1
+SET C1='update_C1'
+WHERE C1 = 'C1_1';
+UPDATE S1.T1
+SET C2='update_C2'
+WHERE C2 = 'C2_1';
+UPDATE S1.T1
+SET C3='update_C3'
+WHERE C3 = 'C3_1';
+
+SELECT *
+FROM S1.T1;
+
+/* T2 權限測試 */
+SELECT *
+FROM S2.T2;
+
+UPDATE S2.T2
+SET C4='update_C4';
+UPDATE S2.T2
+SET C5='update_C5';
+
+SELECT *
+FROM S2.T2;
+
+/* T3 權限測試 */
+SELECT *
+FROM S2.T3;
+
+UPDATE S2.T3
+SET C6='update_C6'
+WHERE C6 = 'C6_1';
+UPDATE S2.T3
+SET C7='update_C7'
+WHERE C7 = 'C7_1';
+UPDATE S2.T3
+SET C8='update_C8'
+WHERE C8 = 'C8_1';
+
+SELECT *
+FROM S2.T3;
